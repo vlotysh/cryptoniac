@@ -2,6 +2,7 @@ import React from "react";
 import millify from "millify";
 import {Typography, Row, Col, Statistic} from "antd";
 import {Link} from "react-router-dom";
+import {Counter} from "../features/counter/Counter";
 
 const {Title}  = Typography;
 
@@ -11,6 +12,7 @@ const Homepage = () => {
             <Title level={2} className="heading">
                 Cryptoniac crypto stats
             </Title>
+            <Counter />
             <Row>
                 <Col span={12}>
                     <Statistic title="Total cryptocurrencies" value="5" />
